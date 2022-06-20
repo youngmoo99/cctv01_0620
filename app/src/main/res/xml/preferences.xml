@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:iconSpaceReserved="false"
+    >
+
+    <!--시스템 설정 카테고리-->
+
+    <PreferenceCategory
+        app:key="notifications_category"
+        app:title="시스템 설정">
+
+        <SwitchPreferenceCompat
+            app:key="app_password"
+            app:title="앱 비밀번호"
+            app:summary="사용안함"/>
+        <Preference
+            app:key="time_type"
+            app:title="시간 형식"
+            app:summary="시스템 시간"/>
+
+    </PreferenceCategory>
+
+    <!-- 네트워크 카테고리-->
+    <PreferenceCategory
+        app:key="network_category"
+        app:title="네트워크">
+
+        <Preference
+            app:key="fen_server_address"
+            app:title="FEN 서버 주소"
+            app:summary="dvrnames.net"
+            />
+        <Preference
+            app:key="fen_server_port"
+            app:summary="10088"
+            app:title="FEN 서버 포트"/>
+        <SwitchPreferenceCompat
+            app:key="low_datamode"
+            app:title="저데이터 모드"
+            />
+        <SwitchPreferenceCompat
+            app:key="only_wifi"
+            app:title="Wi-Fi 연결시에만 접속"
+            />
+        <Preference
+            app:key="auto_logout"
+            app:summary="10분후 움직임이 없으면 자동으로 접속종료합니다."
+            app:title="자동 접속해제"/>
+
+    </PreferenceCategory>
+    <!-- 검색 카테고리-->
+    <PreferenceCategory>
+    <Preference
+        app:key="dual_stream"
+        app:title="듀얼-스트림 재생 우선순위"
+        app:summary="동적 제어"
+        />
+    </PreferenceCategory>
+    <!-- 푸시 카테고리 -->
+
+    <PreferenceCategory>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

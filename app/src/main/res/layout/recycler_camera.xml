@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/cam_profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cctv_neon2" />
+
+        <TextView
+            android:id="@+id/cam_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="거실용 카메라"
+            android:textColor="#4CAF50"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cam_profile"
+            app:layout_constraintTop_toTopOf="@+id/cam_profile" />
+
+        <TextView
+            android:id="@+id/ip_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="IP주소"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cam_profile"
+            app:layout_constraintTop_toBottomOf="@+id/cam_name" />
+
+        <TextView
+            android:id="@+id/port_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:text="포트번호"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cam_name"
+            app:layout_constraintTop_toTopOf="@+id/cam_profile" />
+
+        <TextView
+            android:id="@+id/ip_address_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="000.000.000.000"
+            android:textColor="#03A9F4"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/cam_profile"
+            app:layout_constraintStart_toEndOf="@+id/ip_address"
+            app:layout_constraintTop_toTopOf="@+id/ip_address"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/port_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="8080"
+            android:textColor="#FF9800"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/port_num"
+            app:layout_constraintTop_toTopOf="@+id/cam_profile" />
+
+        <ImageView
+            android:id="@+id/remove_camera"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toEndOf="@+id/port_value"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/tashhbin_neon2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
